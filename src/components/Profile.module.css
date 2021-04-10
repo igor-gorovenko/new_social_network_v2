@@ -1,0 +1,12 @@
+.content {
+	grid-area: c;
+	background-color: royalblue;
+	margin: 24px;
+	padding: 24px;
+	height: max-content;
+}
+
+.item {
+	background-color: yellow;
+	margin-top: 24px;
+}

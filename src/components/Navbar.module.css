@@ -1,0 +1,21 @@
+.nav {
+	grid-area: n;
+	background-color: whitesmoke;
+}
+
+.logo {
+	background-color: springgreen;
+	line-height: 1em;
+	padding: 24px;
+}
+
+.item {
+	padding: 24px;
+	line-height: 1em;
+	background-color: salmon;
+}
+
+.item.active {
+	background-color: red;
+	color: white;
+}
