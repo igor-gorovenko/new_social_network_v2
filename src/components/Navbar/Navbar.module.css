@@ -1,0 +1,49 @@
+.nav {
+	grid-area: n;
+	background-color: whitesmoke;
+	height: 100vh;
+	position: relative;
+}
+
+.avatar {
+	height: 44px;
+	width: 44px;
+	background: #1890ff;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+.fullName {
+	text-align: center;
+}
+
+.logo {
+	position: absolute;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	bottom: 0px;
+	background-color: black;
+	color: white;
+	line-height: 4em;
+}
+
+.item {
+	padding: 16px;
+	line-height: 1em;
+}
+
+.item.active {
+	background-color: #1890ff;
+	color: white;
+}
+
+.item a {
+	color: #1890ff;
+	text-decoration: none;
+}
+
+.item.active a {
+	color: white;
+	text-decoration: none;
+}
