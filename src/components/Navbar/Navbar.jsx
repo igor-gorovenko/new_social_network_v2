@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import style from './Navbar.module.css'
 import NavbarProfile from './NavbarProfile/NavbarProfile'
 
@@ -7,14 +8,14 @@ const Navbar = () => {
 		<nav className={style.nav}>
 			<NavbarProfile />
 
-			<div className={`${style.item} ${style.active}`}>
-				<a href='/mypost'>My post</a>
+			<div className={style.item}>
+				<NavLink to='/mypost'>My post</NavLink>
 			</div>
 			<div className={style.item}>
-				<a href='/news'>News</a>
+				<NavLink to='/news'>News</NavLink>
 			</div>
 			<div className={style.item}>
-				<a href='/dialogs'>Dialogs</a>
+				<NavLink to='/dialogs'>Dialogs</NavLink>
 			</div>
 
 			<div className={style.logo}>LOGO</div>

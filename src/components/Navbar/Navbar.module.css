@@ -20,18 +20,3 @@
 	padding: 16px;
 	line-height: 1em;
 }
-
-.item.active {
-	background-color: #1890ff;
-	color: white;
-}
-
-.item a {
-	color: #1890ff;
-	text-decoration: none;
-}
-
-.item.active a {
-	color: white;
-	text-decoration: none;
-}
