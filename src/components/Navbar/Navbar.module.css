@@ -2,7 +2,8 @@
 	grid-area: n;
 	background-color: whitesmoke;
 	height: 100vh;
-	position: relative;
+	width: 180px;
+	position: fixed;
 }
 
 .logo {

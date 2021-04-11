@@ -1,7 +1,12 @@
 import style from './Post.module.css'
 
-const Post = () => {
-	return <div className={style.item}>Post 1</div>
+const Post = (props) => {
+	return (
+		<div className={style.item}>
+			{props.messagePost}
+			<div>{props.countLike}</div>
+		</div>
+	)
 }
 
 export default Post

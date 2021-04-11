@@ -1,10 +1,13 @@
+import { NavLink } from 'react-router-dom'
 import style from './NavbarProfile.module.css'
 
 const NavbarProfile = () => {
 	return (
-		<div>
+		<div className='NavbarProfile'>
 			<div className={style.avatar}></div>
-			<span className={style.fullName}>Full Name</span>
+			<NavLink to='/profileinfo' className={style.fullName}>
+				Igor Gorovenko
+			</NavLink>
 		</div>
 	)
 }

@@ -1,10 +1,14 @@
+.NavbarProfile {
+	margin: 8px;
+	padding-bottom: 40px;
+}
+
 .avatar {
 	height: 44px;
 	width: 44px;
 	background: #1890ff;
 	border-radius: 100%;
 	display: inline-block;
-	padding-bottom: 40px;
 }
 
 .fullName {
