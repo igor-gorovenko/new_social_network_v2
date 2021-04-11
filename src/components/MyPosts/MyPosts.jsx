@@ -1,11 +1,10 @@
 import React from 'react'
-import style from './MyPosts.module.css'
 import Post from './Post/Post'
 import NewPostForm from './NewPost/NewPost'
 
-const Profile = () => {
+const MyPost = () => {
 	return (
-		<div className={style.content}>
+		<div>
 			<h1>My post</h1>
 			<div>
 				<NewPostForm />
@@ -20,4 +19,4 @@ const Profile = () => {
 	)
 }
 
-export default Profile
+export default MyPost

@@ -5,18 +5,6 @@
 	position: relative;
 }
 
-.avatar {
-	height: 44px;
-	width: 44px;
-	background: #1890ff;
-	border-radius: 100%;
-	display: inline-block;
-}
-
-.fullName {
-	text-align: center;
-}
-
 .logo {
 	position: absolute;
 	box-sizing: border-box;
