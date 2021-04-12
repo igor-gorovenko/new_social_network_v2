@@ -4,7 +4,7 @@ import style from './NavbarProfile.module.css'
 const NavbarProfile = () => {
 	return (
 		<div className='NavbarProfile'>
-			<div className={style.avatar}></div>
+			<img className={style.avatar}></img>
 			<NavLink to='/profileinfo' className={style.fullName}>
 				Igor Gorovenko
 			</NavLink>

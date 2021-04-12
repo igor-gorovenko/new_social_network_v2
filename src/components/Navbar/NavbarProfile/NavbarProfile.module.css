@@ -1,16 +1,13 @@
 .NavbarProfile {
-	margin: 8px;
-	padding-bottom: 40px;
+	display: flex;
+	align-items: center;
+	background-color: red;
 }
 
 .avatar {
-	height: 44px;
-	width: 44px;
-	background: #1890ff;
-	border-radius: 100%;
-	display: inline-block;
-}
-
-.fullName {
-	text-align: center;
+	height: 40px;
+	width: 40px;
+	margin-right: 8px;
+	margin: 16px;
+	background-color: #1890ff;
 }
