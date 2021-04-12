@@ -1,23 +1,9 @@
-import { NavLink } from 'react-router-dom'
 import style from './Dialogs.module.css'
-import { Button } from 'antd'
-import 'antd/dist/antd.css'
-
-const Dialog = (props) => {
-	let path = '/dialogs/' + props.id
-	return (
-		<div>
-			<NavLink to={path}>{props.name}</NavLink>
-		</div>
-	)
-}
-
-const Message = (props) => {
-	return <div>{props.message}</div>
-}
+import DialogItem from './DialogItem/DialogItem'
+import Message from './Message/Message'
 
 const Dialogs = (props) => {
-	let dialogsData = [
+	let dialogs = [
 		{ id: 1, name: 'Vika' },
 		{ id: 2, name: 'Petya' },
 		{ id: 3, name: 'Nick' },
@@ -25,39 +11,24 @@ const Dialogs = (props) => {
 		{ id: 5, name: 'Miha' },
 	]
 
-	let messageData = [
+	let messages = [
 		{ id: 1, message: 'Hi' },
 		{ id: 1, message: 'How are you?' },
 		{ id: 1, message: 'I am fine' },
 	]
+
+	const dialogsElements = dialogs.map((d) => (
+		<DialogItem name={d.name} id={d.id} />
+	))
+
+	const messagesElements = messages.map((m) => <Message message={m.message} />)
+
 	return (
 		<div>
 			<h1>Dialogs</h1>
 			<div className={style.dialogs}>
-				<div>
-					<Dialog name={dialogsData[0].name} id={dialogsData[0].id} />
-					<Dialog name={dialogsData[1].name} id={dialogsData[1].id} />
-					<Dialog name={dialogsData[2].name} id={dialogsData[2].id} />
-					<Dialog name={dialogsData[3].name} id={dialogsData[3].id} />
-					<Dialog name={dialogsData[4].name} id={dialogsData[4].id} />
-				</div>
-				<div>
-					<Message message={messageData[0].message} />
-					<Message message={messageData[1].message} />
-					<Message message={messageData[2].message} />
-					<div>
-						<textarea>New Message</textarea>
-					</div>
-
-					<div>
-						<Button className={style.button} type='primary'>
-							Send
-						</Button>
-						<Button className={style.button} type='default'>
-							Delete
-						</Button>
-					</div>
-				</div>
+				<div>{dialogsElements}</div>
+				<div>{messagesElements}</div>
 			</div>
 		</div>
 	)
