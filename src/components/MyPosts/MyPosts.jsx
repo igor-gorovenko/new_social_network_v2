@@ -10,7 +10,7 @@ const MyPost = (props) => {
 	// 	{ id: 4, message: 'Text Post 4', countLike: 'likes 876' },
 	// ]
 
-	const postsElements = props.posts.map((p) => (
+	const postsElements = props.state.posts.map((p) => (
 		<Post message={p.message} countLike={p.countLike} />
 	))
 
