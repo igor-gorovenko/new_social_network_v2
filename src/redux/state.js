@@ -1,5 +1,5 @@
 let state = {
-	postPages: {
+	postPage: {
 		posts: [
 			{ id: 1, message: 'Text Post 1', countLike: 'likes 32' },
 			{ id: 2, message: 'Text Post 2', countLike: 'likes 543' },
@@ -8,7 +8,7 @@ let state = {
 		],
 	},
 
-	dialogsPages: {
+	dialogsPage: {
 		dialogs: [
 			{ id: 1, name: 'Vika' },
 			{ id: 2, name: 'Petya' },
