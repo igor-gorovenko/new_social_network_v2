@@ -8,7 +8,11 @@ const NewPostForm = (props) => {
 			<h4>New post</h4>
 			<textarea ref={props.newPostElement}></textarea>
 			<div>
-				<Button onClick={props.addPost} className={style.button} type='primary'>
+				<Button
+					onClick={props.addNewPost}
+					className={style.button}
+					type='primary'
+				>
 					Add
 				</Button>
 			</div>

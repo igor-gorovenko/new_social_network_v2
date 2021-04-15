@@ -1,12 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './Navbar.module.css'
-import NavbarProfile from './NavbarProfile/NavbarProfile'
 
 const Navbar = () => {
 	return (
 		<nav className={style.nav}>
-			<NavbarProfile />
+			<div className={style.fullName}>
+				<NavLink to='/profileinfo'>Igor Gorovenko</NavLink>
+			</div>
+			<hr className={style.line} />
 
 			<div className={style.item}>
 				<NavLink to='/mypost'>My post</NavLink>

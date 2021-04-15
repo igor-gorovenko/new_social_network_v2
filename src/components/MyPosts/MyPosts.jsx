@@ -9,15 +9,15 @@ const MyPost = (props) => {
 
 	let newPostElement = React.createRef()
 
-	let addPost = () => {
+	let addNewPost = () => {
 		let text = newPostElement.current.value
-		alert(text)
+		props.addPost(text)
 	}
 
 	return (
 		<div>
 			<h1>My post</h1>
-			<NewPostForm addPost={addPost} newPostElement={newPostElement} />
+			<NewPostForm addPost={addNewPost} newPostElement={newPostElement} />
 			{postsElements}
 		</div>
 	)

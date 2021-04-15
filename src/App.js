@@ -16,7 +16,9 @@ const App = (props) => {
 					<Route path='/profileinfo' render={() => <ProfileInfo />} />
 					<Route
 						path='/mypost'
-						render={() => <MyPosts state={props.state.postPage} />}
+						render={() => (
+							<MyPosts state={props.state.postPage} addPost={props.addPost} />
+						)}
 					/>
 					<Route path='/news' render={() => <News />} />
 					<Route

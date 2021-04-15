@@ -21,3 +21,15 @@
 	padding: 16px;
 	line-height: 1em;
 }
+
+.fullName {
+	padding: 16px;
+	line-height: 2em;
+}
+
+.line {
+	background-color: rgb(218, 218, 218);
+	margin: 0 16px 16px 16px;
+	height: 2px;
+	border: none;
+}
