@@ -1,6 +1,8 @@
+import React from 'react'
 import style from './Dialogs.module.css'
 import DialogItem from './DialogItem/DialogItem'
 import Message from './Message/Message'
+import NewMessageForm from './NewMessageForm/NewMessageForm'
 
 const Dialogs = (props) => {
 	const dialogsElements = props.state.dialogs.map((d) => (
@@ -11,12 +13,25 @@ const Dialogs = (props) => {
 		<Message message={m.message} />
 	))
 
+	let newMessageElement = React.createRef()
+
+	let addNewMessage = () => {
+		let text = newMessageElement.current.value
+		alert(text)
+	}
+
 	return (
 		<div>
 			<h1>Dialogs</h1>
 			<div className={style.dialogs}>
 				<div>{dialogsElements}</div>
-				<div>{messagesElements}</div>
+				<div>
+					{messagesElements}
+					<NewMessageForm
+						newMessageElement={newMessageElement}
+						addNewMessage={addNewMessage}
+					/>
+				</div>
 			</div>
 		</div>
 	)
