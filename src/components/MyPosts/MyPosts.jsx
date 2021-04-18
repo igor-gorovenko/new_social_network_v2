@@ -1,6 +1,5 @@
 import React from 'react'
 import Post from './Post/Post'
-import NewPostForm from './NewPost/NewPost'
 
 const MyPost = (props) => {
 	const postsElements = props.state.posts.map((p) => (
@@ -9,7 +8,8 @@ const MyPost = (props) => {
 
 	let newPostElement = React.createRef()
 
-	let addNewPost = () => {
+	let addPost = () => {
+		debugger
 		let text = newPostElement.current.value
 		props.addPost(text)
 	}
@@ -17,7 +17,15 @@ const MyPost = (props) => {
 	return (
 		<div>
 			<h1>My post</h1>
-			<NewPostForm addPost={addNewPost} newPostElement={newPostElement} />
+			<div>
+				<h4>New post</h4>
+				<div>
+					<textarea ref={newPostElement}></textarea>
+				</div>
+				<div>
+					<button onClick={addPost}>Add</button>
+				</div>
+			</div>
 			{postsElements}
 		</div>
 	)
